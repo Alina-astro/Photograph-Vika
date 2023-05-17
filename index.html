@@ -15,21 +15,39 @@
             color: #ffffff;
         }
 
-        .nav {
+        .container {
+            border: 1px solid #e775f7;
+            background-image: url(images/header_img2.png);
+            /* НЕ РАБОТАЕТ */
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        nav .navigation {
+            text-decoration: none;
+            font-weight: bolder;
+            padding: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 16pt;
             color: #ffffff;
-            /*------- НЕ РАБОТАЕТ -------*/
+        }
+
+        nav .navigation:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 
 <body>
     <header>
-        <nav class="nav">
-            <a id="navvika" href="index.html">VIKA SADOVNIKOVA PH</a>
-            <a id="navservices" href="index2.html">УСЛУГИ</a>
-            <a id="navcontacts" href="index3.html">КОНТАКТЫ</a>
+        <div class="container">
+            <nav>
+                <a class="navigation" id="navvika" href="index.html">VIKA SADOVNIKOVA PH</a>
+                <a class="navigation" id="navservices" href="index2.html">УСЛУГИ</a>
+                <a class="navigation" id="navcontacts" href="index3.html">КОНТАКТЫ</a>
 
-        </nav>
+            </nav>
+        </div>
     </header>
 
 </body>
