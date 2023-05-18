@@ -16,11 +16,21 @@
         }
 
         .container {
-            border: 1px solid #e775f7;
+            border: 2px solid #e775f7;
             background-image: url(images/header_img2.png);
-            /* НЕ РАБОТАЕТ */
             background-repeat: no-repeat;
             background-size: cover;
+
+            /*max-width: 1170px;  
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 16px;
+            padding-right: 16px;
+            
+            background-position: center;
+            padding-bottom: 62.5%; */
+            /* Соотношение сторон 16:9 */
+
         }
 
         nav .navigation {
@@ -40,13 +50,13 @@
 
 <body>
     <header>
-        <div class="container">
+        <div class="container" style="height:780px">
             <nav>
                 <a class="navigation" id="navvika" href="index.html">VIKA SADOVNIKOVA PH</a>
                 <a class="navigation" id="navservices" href="index2.html">УСЛУГИ</a>
                 <a class="navigation" id="navcontacts" href="index3.html">КОНТАКТЫ</a>
-
             </nav>
+            <p>К СЕБЕ ЧЕРЕЗ ФОТОГРАФИЮ</p>
         </div>
     </header>
 
