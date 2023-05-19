@@ -15,7 +15,7 @@
             src: url('fonts/montserrat-medium.ttf');
             font-style: normal;
             font-family: 'manrope';
-            src: url('fonts/manrope-semibold.ttf');
+            src: url('fonts/manrope-medium.ttf');
             font-style: normal;
 
         }
@@ -30,16 +30,6 @@
             background-image: url(images/header_img2.png);
             background-repeat: no-repeat;
             background-size: cover;
-
-            /*max-width: 1170px;  
-            margin-left: auto;
-            margin-right: auto;
-            padding-left: 16px;
-            padding-right: 16px;
-            
-            background-position: center;
-            padding-bottom: 62.5%; */
-            /* Соотношение сторон 16:9 */
 
         }
 
@@ -64,6 +54,33 @@
             letter-spacing: 10px;
 
         }
+
+        .aboutme {
+            border: 2px solid #e775f7;
+            width: 50vw;
+            padding: 20px;
+        }
+
+        .aboutme p {
+            font-family: 'manrope', Arial, sans-serif;
+            font-size: 22px;
+            font-weight: 100;
+            margin: 40px;
+            line-height: 40px;
+
+        }
+
+        h1 {
+            font-family: 'manrope', Arial, sans-serif;
+            font-size: 40px;
+            letter-spacing: 5px;
+            text-align: center;
+        }
+
+        #myphoto {
+            width: 40vw;
+            height: auto;
+        }
     </style>
 </head>
 
@@ -78,7 +95,28 @@
             <p id="welcome">К СЕБЕ ЧЕРЕЗ ФОТОГРАФИЮ</p>
         </div>
     </header>
+    <main>
+        <section class="aboutme">
+            <h1>Обо мне</h1>
+            <p>Меня зовут Вика.<br />
+                Я неутомимый творец, фотограф и учитель.
+            </p>
+            <p>С любовью и трепетом я снимаю портреты, рассказываю через фотографии о вас и о том, насколько вы
+                уникальны.
+            </p>
+            <p>Творю контент для брендов и мастеров, делаю фотосессии для экспертов и блогеров, снимаю фото
+                и видео, раскрывая героев через визуальные образы.
+            </p>
+            <p>Делаю съёмки онлайн в любой точке земного шара:<br />
+                от Сан-Ремо до Пхукета.
+            </p>
+            <p>Со мной уютно до съёмки, легко в процессе и спокойно после. А ещё я обучаю фотографии на мобильный
+                телефон, курирую курсы и вдохновляю учиться снимать на камеру.
+            </p>
+            <img id="myphoto" src="images/aboutme.JPG" />
+        </section>
 
+    </main>
 </body>
 
 </html>
