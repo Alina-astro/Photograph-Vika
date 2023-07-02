@@ -16,12 +16,13 @@ body {
 }
 
 /*----------------Page 1 Block 1 Background--------------*/
-.container {
-    border: 2px solid #e775f7;
+section.welcome {
     background-image: url(/Photograph-Vika/images/header_img2.png);
     background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 40px;
+    background-size: contain;
+    aspect-ratio: 17/9;
+    padding: 40px 20px 50px 50px;
+
 }
 
 /*----------------Page 2 3 Block 1 Background--------------*/
@@ -32,10 +33,9 @@ body {
 
 /*----------------Page 1 2 3 Block 1 Navigation--------------*/
 nav .navigation {
-    text-decoration: none;
-    font-weight: normal;
-    margin-left: 50px;
     font-family: 'montserrat', Arial, sans-serif;
+    font-weight: normal;
+    text-decoration: none;
     font-size: 16pt;
     letter-spacing: 3px;
     color: #ffffff;
@@ -53,7 +53,7 @@ nav .navigation:active {
 }
 
 #navvika {
-    font-size: 30px;
+    font-size: 33px;
     letter-spacing: 16px;
 }
 
@@ -66,11 +66,10 @@ nav .navigation:active {
 }
 
 /*----------------Page 1 Block 1 Welcome--------------*/
-#welcome {
+p.welcome {
     font-family: 'manrope', Arial, sans-serif;
-    font-size: 50px;
-    margin-top: 580px;
-    margin-left: 50px;
+    font-size: 60px;
+    margin-top: 550px;
     letter-spacing: 12px;
 
 }
