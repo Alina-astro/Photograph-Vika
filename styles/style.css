@@ -1,10 +1,10 @@
 /*----------------Fonts All-------------------*/
 @font-face {
     font-family: 'montserrat';
-    src: url('fonts/montserrat-medium.ttf');
+    src: url('/Photograph-Vika/fonts/Montserrat-Medium.ttf');
     font-style: normal;
     font-family: 'manrope';
-    src: url('fonts/manrope-medium.ttf');
+    src: url('/Photograph-Vika/fonts/Manrope-Medium.ttf');
     font-style: normal;
 
 }
@@ -53,8 +53,9 @@ nav .navigation:active {
 }
 
 #navvika {
-    font-size: 33px;
-    letter-spacing: 18px;
+    font-size: 35px;
+    letter-spacing: 16px;
+    font-weight: 500;
 }
 
 #navservices {
@@ -76,7 +77,7 @@ p.welcome {
 
 /*----------------Page 1 Block 2 About me--------------*/
 section.aboutme {
-    padding: 40px 50px 50px 50px;
+    padding: 40px 70px 40px 70px;
     border: #e775f7 1px solid;
     display: inline-block;
 }
@@ -84,12 +85,12 @@ section.aboutme {
 
 .aboutme p {
     font-family: 'manrope', Arial, sans-serif;
-    font-size: 22px;
+    font-size: 25px;
     font-weight: 100;
-    line-height: 160%;
+    line-height: 120%;
     text-align: justify;
-    letter-spacing: 2px;
-    width: 52vw;
+    letter-spacing: 1px;
+    width: 50vw;
     float: left;
 }
 
@@ -99,7 +100,7 @@ section.aboutme {
     font-size: 40px;
     letter-spacing: 5px;
     text-align: center;
-    width: 50%;
+    width: 50vw;
 }
 
 .aboutme img {
