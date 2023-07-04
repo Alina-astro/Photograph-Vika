@@ -111,6 +111,25 @@ section.aboutme {
 
 /*----------------Page 1 Block 3 Portfolio--------------*/
 
+.portfolio {
+
+    padding: 20px 70px 40px 70px;
+}
+
+.photoblock1,
+.photoblock2,
+.photoblock3,
+.photoblock4,
+.photoblock5,
+.photoblock6,
+.photoblock7 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+
+
 /*----------------Page 1 Block 3 Button--------------*/
 .buttonsearch {
     text-align: center;
