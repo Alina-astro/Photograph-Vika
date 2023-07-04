@@ -15,7 +15,7 @@ body {
     color: #ffffff;
 }
 
-/*----------------Page 1 Block 1 Background--------------*/
+/*----------------Page 1 Block 1 Navigation and Background--------------*/
 section.welcome {
     background-image: url(/Photograph-Vika/images/header_img.png);
     background-repeat: no-repeat;
@@ -25,9 +25,9 @@ section.welcome {
 
 }
 
-/*----------------Page 2 3 Block 1 Background--------------*/
-.container23 {
-    padding-top: 40px;
+/*----------------Page 2 3 Block 1 Navigation--------------*/
+section.container23 {
+    padding: 40px 20px 40px 60px;
 
 }
 
@@ -182,36 +182,43 @@ section.aboutme {
 }
 
 /*----------------Page 2 Block 2 Cervices----------------------*/
-.serviceblock {
+article.serviceblock {
     margin: 100px 50px 10px 50px;
+    display: block;
     border: #e775f7 1px solid;
 }
 
 .serviceblock h1 {
     font-family: 'montserrat', Arial, sans-serif;
+    /*----не подключается---*/
+
     font-weight: 300;
     font-size: 45px;
     letter-spacing: 10px;
+    text-align: center;
     border: #e775f7 1px solid;
 }
 
 .serviceblock img {
     width: 400px;
     height: 580px;
+    float: left;
     border: #e775f7 1px solid;
 }
 
-.serviceblock p,
-.serviceblock li {
+.serviceblock .aboutservice {
     font-family: 'manrope', Arial, sans-serif;
+    /*----не подключается---*/
     font-size: 20px;
     font-weight: 100;
     line-height: 160%;
-
+    margin-left: 38%;
 
 }
 
 /*----------------Page 2 Block 2 Price Buttons--------------*/
+
+
 .price {
     text-align: center;
 }
