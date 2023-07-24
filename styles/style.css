@@ -3,6 +3,9 @@
     font-family: 'montserrat';
     src: url('/Photograph-Vika/fonts/Montserrat-Medium.ttf');
     font-style: normal;
+}
+
+@font-face {
     font-family: 'manrope';
     src: url('/Photograph-Vika/fonts/Manrope-Medium.ttf');
     font-style: normal;
@@ -79,11 +82,33 @@ p.welcome {
 section.aboutme {
     padding: 40px 70px 40px 70px;
     border: #e775f7 1px solid;
-    display: inline-block;
 }
 
+section.aboutme h1 {
+    font-family: 'manrope', Arial, sans-serif;
+    font-weight: 200;
+    font-size: 40px;
+    letter-spacing: 5px;
+    text-align: center;
+    width: 50vw;
+}
 
-.aboutme p {
+div.aboutme {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: #e775f7 1px solid;
+}
+
+.my-text {
+    flex: 0 1 60%;
+}
+
+.my-photo {
+    flex: 0 1 40%;
+}
+
+.my-text p {
     font-family: 'manrope', Arial, sans-serif;
     font-size: 25px;
     font-weight: 100;
@@ -94,19 +119,8 @@ section.aboutme {
     float: left;
 }
 
-.aboutme h1 {
-    font-family: 'manrope', Arial, sans-serif;
-    font-weight: 200;
-    font-size: 40px;
-    letter-spacing: 5px;
-    text-align: center;
-    width: 50vw;
-}
-
-.aboutme img {
-    width: 35vw;
-    float: right;
-    margin-top: 20px;
+.my-photo img {
+    width: 100%;
 }
 
 /*----------------Page 1 Block 3 Portfolio--------------*/
