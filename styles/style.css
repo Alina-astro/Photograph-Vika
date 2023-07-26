@@ -81,7 +81,6 @@ p.welcome {
 /*----------------Page 1 Block 2 About me--------------*/
 section.aboutme {
     padding: 40px 70px 40px 70px;
-    border: #e775f7 1px solid;
 }
 
 section.aboutme h1 {
@@ -97,26 +96,25 @@ div.aboutme {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: #e775f7 1px solid;
 }
 
 .my-text {
     flex: 0 1 60%;
+    padding: 10px 60px 10px 0px;
 }
+
 
 .my-photo {
     flex: 0 1 40%;
 }
 
 .my-text p {
-    font-family: 'manrope', Arial, sans-serif;
+    font-family: 'manrope', sans-serif;
     font-size: 25px;
     font-weight: 100;
-    line-height: 120%;
-    text-align: justify;
+    line-height: 150%;
     letter-spacing: 1px;
-    width: 50vw;
-    float: left;
+    text-align: justify;
 }
 
 .my-photo img {
@@ -197,37 +195,41 @@ div.aboutme {
 
 /*----------------Page 2 Block 2 Cervices----------------------*/
 article.serviceblock {
-    margin: 100px 50px 10px 50px;
-    display: block;
-    border: #e775f7 1px solid;
+    margin: 50px;
+    padding: 30px 30px 30px 50px;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: 10vh 2fr 20vh;
 }
 
-.serviceblock h1 {
-    font-family: 'montserrat', Arial, sans-serif;
-    /*----не подключается---*/
+.service-name {
+    grid-column: 1/3;
+}
 
+.service-name h1 {
+    font-family: 'montserrat', sans-serif;
     font-weight: 300;
     font-size: 45px;
-    letter-spacing: 10px;
+    letter-spacing: 1px;
     text-align: center;
-    border: #e775f7 1px solid;
+    margin-top: 0px;
 }
 
-.serviceblock img {
-    width: 400px;
-    height: 580px;
-    float: left;
-    border: #e775f7 1px solid;
+.service-photo img {
+    height: 75vh;
 }
 
-.serviceblock .aboutservice {
-    font-family: 'manrope', Arial, sans-serif;
-    /*----не подключается---*/
+.aboutservice {
+    font-family: 'manrope', sans-serif;
     font-size: 20px;
     font-weight: 100;
-    line-height: 160%;
-    margin-left: 38%;
+    line-height: 190%;
+    letter-spacing: 0.8px;
+    align-self: center;
+}
 
+.aboutservice p {
+    margin-top: 0px;
 }
 
 /*----------------Page 2 Block 2 Price Buttons--------------*/
@@ -235,32 +237,29 @@ article.serviceblock {
 
 .price {
     text-align: center;
+    grid-column: 1/3;
 }
 
 .price p {
     font-family: 'manrope', Arial, sans-serif;
     font-size: 36px;
     font-weight: 500;
-    border: #e775f7 1px solid;
+    margin-top: 10px;
 }
 
-
 .button2 {
-
     width: 26vw;
-    height: 80px;
-    margin-top: -30px;
+    height: 10vh;
+    margin-top: 0px;
     background-color: #545A62;
     border-radius: 24px;
     border: 0px;
     cursor: pointer;
-    border: #e775f7 1px solid;
 }
 
 .button2:hover {
     background: #2A2F36;
 }
-
 
 .button2:active {
     background: #23282E;
@@ -268,9 +267,8 @@ article.serviceblock {
 
 .button2text {
     color: #ffffff;
-    font-family: 'manrope', Arial, sans-serif;
-    font-size: 180%;
-
+    font-family: 'manrope', sans-serif;
+    font-size: 150%;
 }
 
 /*----------------Page 3 Block 2 Buttons Contacts--------------*/
