@@ -35,51 +35,44 @@ div.container23 {
 }
 
 /*----------------Page 1 2 3 Block 1 Navigation--------------*/
-nav.nav {
+.nav {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 
 }
 
-div.logo {
+a.logo {
     grid-column: 1/5;
-}
-
-div.logo a {
     font-size: 38px;
     font-weight: 500;
     letter-spacing: 12px;
+    justify-self: start;
 }
 
-div.navigation {
+a.navigation {
     justify-self: center;
     align-self: center;
+    font-size: 22px;
+    letter-spacing: 3px;
 }
 
-.logo a,
-.navigation a {
+a.logo,
+a.navigation {
     font-family: 'montserrat', Arial, sans-serif;
     font-weight: normal;
     text-decoration: none;
-    font-size: 22px;
-    letter-spacing: 3px;
     color: #ffffff;
+    border: 5px solid transparent;
 }
 
-.aboutservice a:hover,
-.navigation a:hover {
-    text-decoration: underline;
-}
-
-.logo a:active,
-.navigation a:active {
+a.logo:active,
+a.navigation:active {
     background: #2A2F36;
     border: 5px solid #2A2F36;
     border-radius: 8px;
     text-decoration: none;
 }
-
 
 /*----------------Page 1 Block 1 Welcome--------------*/
 p.welcome {
