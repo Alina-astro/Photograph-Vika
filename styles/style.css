@@ -35,45 +35,57 @@ section.container23 {
 }
 
 /*----------------Page 1 2 3 Block 1 Navigation--------------*/
-nav .navigation {
+nav.nav {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+}
+
+div.logo {
+    grid-column: 1/5;
+}
+
+div.logo a {
+    font-size: 38px;
+    font-weight: 500;
+    letter-spacing: 12px;
+}
+
+div.navigation {
+    justify-self: center;
+    align-self: center;
+}
+
+.logo a,
+.navigation a {
     font-family: 'montserrat', Arial, sans-serif;
     font-weight: normal;
     text-decoration: none;
-    font-size: 16pt;
+    font-size: 22px;
     letter-spacing: 3px;
     color: #ffffff;
 }
 
-nav .navigation:hover {
+.aboutservice a:hover,
+.navigation a:hover {
     text-decoration: underline;
 }
 
-nav .navigation:active {
+.logo a:active,
+.navigation a:active {
     background: #2A2F36;
     border: 5px solid #2A2F36;
     border-radius: 8px;
     text-decoration: none;
 }
 
-#navvika {
-    font-size: 35px;
-    letter-spacing: 16px;
-    font-weight: 500;
-}
-
-#navservices {
-    margin-left: 20%;
-}
-
-#navcontacts {
-    margin-left: 5%;
-}
 
 /*----------------Page 1 Block 1 Welcome--------------*/
 p.welcome {
     font-family: 'manrope', Arial, sans-serif;
     font-size: 60px;
-    margin-top: 590px;
+    margin-top: 45%;
     letter-spacing: 12px;
 
 }
