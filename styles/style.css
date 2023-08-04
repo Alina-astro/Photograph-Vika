@@ -19,7 +19,7 @@ body {
 }
 
 /*----------------Page 1 Block 1 Navigation and Background--------------*/
-section.welcome {
+div.welcome {
     background-image: url(/Photograph-Vika/images/header_img.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -29,7 +29,7 @@ section.welcome {
 }
 
 /*----------------Page 2 3 Block 1 Navigation--------------*/
-section.container23 {
+div.container23 {
     padding: 40px 20px 40px 60px;
 
 }
@@ -246,7 +246,6 @@ article.serviceblock {
 
 /*----------------Page 2 Block 2 Price Buttons--------------*/
 
-
 .price {
     text-align: center;
     grid-column: 1/3;
@@ -259,14 +258,18 @@ article.serviceblock {
     margin-top: 10px;
 }
 
+
 .button2 {
-    width: 26vw;
-    height: 10vh;
-    margin-top: 0px;
+    display: inline-block;
     background-color: #545A62;
     border-radius: 24px;
     border: 0px;
     cursor: pointer;
+    color: #ffffff;
+    font-family: 'manrope', sans-serif;
+    font-size: 150%;
+    text-decoration: none;
+    padding: 3vh 5vh;
 }
 
 .button2:hover {
@@ -277,12 +280,6 @@ article.serviceblock {
     background: #23282E;
 }
 
-.button2text {
-    color: #ffffff;
-    font-family: 'manrope', sans-serif;
-    font-size: 150%;
-}
-
 /*----------------Page 3 Block 2 Buttons Contacts--------------*/
 .buttonscontacts {
     text-align: center;
@@ -290,7 +287,6 @@ article.serviceblock {
 }
 
 .button3 {
-
     width: 30vw;
     height: 60px;
     margin-top: 60px;
@@ -303,7 +299,6 @@ article.serviceblock {
 .button3:hover {
     background: #2A2F36;
 }
-
 
 .button3:active {
     background: #23282E;
