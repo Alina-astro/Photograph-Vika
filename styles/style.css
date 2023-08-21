@@ -1,13 +1,13 @@
 /*----------------Fonts All-------------------*/
 @font-face {
-    font-family: 'montserrat';
     src: url('/Photograph-Vika/fonts/Montserrat-Medium.ttf');
+    font-family: 'montserrat';
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'manrope';
     src: url('/Photograph-Vika/fonts/Manrope-Medium.ttf');
+    font-family: 'manrope';
     font-style: normal;
 
 }
@@ -16,6 +16,7 @@
 body {
     background: #3A3F45;
     color: #ffffff;
+    max-width: 1440px;
 }
 
 /*----------------Page 1 Block 1 Navigation and Background--------------*/
@@ -23,6 +24,7 @@ div.welcome {
     background-image: url(/Photograph-Vika/images/header_img.png);
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: top;
     aspect-ratio: 17/9;
     padding: 40px 20px 50px 60px;
 
@@ -37,28 +39,19 @@ div.container23 {
 /*----------------Page 1 2 3 Block 1 Navigation--------------*/
 .nav {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-
+    grid-template-columns: 1.8fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(1fr, 1.5fr));
+    justify-content: space-between;
+    align-items: center;
 }
 
-a.logo {
-    grid-column: 1/5;
-    font-size: 38px;
-    font-weight: 500;
-    letter-spacing: 12px;
-    justify-self: start;
-}
-
-a.navigation {
-    justify-self: center;
-    align-self: center;
-    font-size: 22px;
-    letter-spacing: 3px;
+.navigation {
+    display: flex;
+    justify-content: space-around;
 }
 
 a.logo,
-a.navigation {
+.navigation a {
     font-family: 'montserrat', Arial, sans-serif;
     font-weight: normal;
     text-decoration: none;
@@ -66,8 +59,20 @@ a.navigation {
     border: 5px solid transparent;
 }
 
+a.logo {
+    justify-self: start;
+    font-size: 2.8vw;
+    font-weight: 500;
+    letter-spacing: 12px;
+}
+
+.navigation a {
+    font-size: 1.5vw;
+    letter-spacing: 3px;
+}
+
 a.logo:active,
-a.navigation:active {
+.navigation a:active {
     background: #2A2F36;
     border: 5px solid #2A2F36;
     border-radius: 8px;
@@ -77,11 +82,11 @@ a.navigation:active {
 /*----------------Page 1 Block 1 Welcome--------------*/
 h1.welcome {
     font-family: 'manrope', Arial, sans-serif;
-    font-size: 8vh;
-    margin-top: 45%;
+    font-size: 4vw;
+    margin-top: 74vh;
     letter-spacing: 12px;
-
 }
+
 
 /*----------------Page 1 Block 2 About me--------------*/
 section.aboutme {
