@@ -378,6 +378,12 @@ article.serviceblock {
         letter-spacing: 0;
     }
 
+    .price p,
+    .price a {
+        font-size: 5vw;
+        color: yellow;
+    }
+
 }
 
 /*----------------Page 2 Block 2 Price Buttons--------------*/
