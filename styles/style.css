@@ -89,6 +89,10 @@ h1.welcome {
 }
 
 @media all and (min-width: 280px) and (max-width: 425px) {
+    * {
+        box-sizing: border-box;
+    }
+
     div.welcome {
         padding: 20px;
     }
@@ -132,7 +136,7 @@ section.aboutme {
 section.aboutme h2 {
     font-family: 'manrope', Arial, sans-serif;
     font-weight: 200;
-    font-size: 40px;
+    font-size: 4vw;
     letter-spacing: 5px;
     text-align: center;
     width: 50vw;
@@ -142,6 +146,7 @@ div.aboutme {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .my-text {
@@ -156,7 +161,7 @@ div.aboutme {
 
 .my-text p {
     font-family: 'manrope', sans-serif;
-    font-size: 25px;
+    font-size: 1.8vw;
     font-weight: 100;
     line-height: 150%;
     letter-spacing: 1px;
@@ -165,6 +170,32 @@ div.aboutme {
 
 .my-photo img {
     width: 100%;
+}
+
+@media all and (min-width: 280px) and (max-width: 425px) {
+
+    section.aboutme {
+        padding: 5vw;
+    }
+
+    section.aboutme h2 {
+        font-size: 5vw;
+
+    }
+
+    div.aboutme {
+        flex-wrap: wrap-reverse;
+    }
+
+    .my-photo,
+    .my-text {
+        flex: 0 1 100%;
+        padding: 0;
+    }
+
+    .my-text p {
+        font-size: 4vw;
+    }
 }
 
 /*----------------Page 1 Block 3 Portfolio--------------*/
@@ -189,6 +220,33 @@ div.aboutme {
     margin-top: 15px;
 }
 
+@media all and (min-width: 280px) and (max-width: 425px) {
+    .portfolio {
+        padding: 5vw;
+    }
+
+    .photoblock1,
+    .photoblock2,
+    .photoblock3,
+    .photoblock4,
+    .photoblock5,
+    .photoblock6,
+    .photoblock7 {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .photoblock1 img,
+    .photoblock2 img,
+    .photoblock3 img,
+    .photoblock4 img,
+    .photoblock5 img,
+    .photoblock6 img,
+    .photoblock7 img {
+        width: 100%;
+        margin-top: 5vw;
+    }
+}
 
 
 /*----------------Page 1 Block 3 Button--------------*/
@@ -218,6 +276,24 @@ div.aboutme {
 
 .button1:active {
     background: #23282E;
+}
+
+@media all and (min-width: 280px) and (max-width: 425px) {
+    .button1 {
+        margin-top: 5vw;
+        display: inline-block;
+        width: 70vw;
+        padding: 3vh;
+        background-color: #545A62;
+        border-radius: 24px;
+        border: 0px;
+        cursor: pointer;
+        color: #ffffff;
+        text-decoration: none;
+        font-family: 'manrope', Arial, sans-serif;
+        font-size: 120%;
+        text-align: center;
+    }
 }
 
 /*----------------Page 1 2 Block 4 Contacts--------------*/
