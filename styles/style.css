@@ -452,3 +452,9 @@ article.serviceblock {
 .button3:active {
     background: #23282E;
 }
+
+@media all and (min-width: 280px) and (max-width: 425px) {
+    .button3 {
+        width: 60vw;
+    }
+}
