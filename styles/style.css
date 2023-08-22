@@ -354,6 +354,32 @@ article.serviceblock {
     margin-top: 0px;
 }
 
+@media all and (min-width: 280px) and (max-width: 425px) {
+
+    article.serviceblock {
+        margin: 5vw;
+        padding: 5vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .service-name h1 {
+        font-size: 5vw;
+    }
+
+    .service-photo img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .aboutservice {
+        font-size: 4vw;
+        line-height: 160%;
+        letter-spacing: 0;
+    }
+
+}
+
 /*----------------Page 2 Block 2 Price Buttons--------------*/
 
 .price {
