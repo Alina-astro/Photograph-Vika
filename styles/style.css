@@ -18,6 +18,7 @@
   width: 100%;
   height: 800px;
   margin: 0 auto;
+  background-color: #1e1e1e;
   background-image: url(../images/header_img.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -27,12 +28,28 @@
 
 .wrap {
   padding: 60px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media all and (min-width: 280px) and (max-width: 1030px) {
+  .wrap {
+    padding: 10px;
+  }
 }
 
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media all and (min-width: 280px) and (max-width: 1030px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 30px;
+  }
 }
 
 .nav__logo {
@@ -44,13 +61,26 @@
   display: flex;
   justify-content: space-between;
 }
+@media all and (min-width: 280px) and (max-width: 1030px) {
+  .nav__text {
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 30px;
+  }
+}
 
 .nav__logo a {
   font-family: "Montserrat";
   font-size: 45px;
-  letter-spacing: 3px;
+  letter-spacing: 5px;
   text-decoration: none;
   color: #ffffff;
+}
+@media all and (min-width: 280px) and (max-width: 1030px) {
+  .nav__logo a {
+    font-size: 30px;
+    letter-spacing: 1px;
+  }
 }
 
 .nav__text a {
@@ -58,4 +88,19 @@
   font-size: 25px;
   text-decoration: none;
   color: #ffffff;
+}
+
+.container__title {
+  margin: 0;
+  color: #ffffff;
+  font-family: "Manrope";
+  font-size: 60px;
+  letter-spacing: 15px;
+  font-weight: 400;
+}
+@media all and (min-width: 280px) and (max-width: 1030px) {
+  .container__title {
+    font-size: 40px;
+    letter-spacing: 5px;
+  }
 }/*# sourceMappingURL=style.css.map */

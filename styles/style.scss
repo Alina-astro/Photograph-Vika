@@ -26,6 +26,7 @@ $color-active: #23282e;
   width: 100%;
   height: 800px;
   margin: 0 auto;
+  background-color: $color-bg;
   background-image: url(../images/header_img.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -34,11 +35,23 @@ $color-active: #23282e;
 }
 .wrap {
   padding: 60px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @media all and (min-width: 280px) and (max-width: 1030px) {
+    padding: 10px;
+  }
 }
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media all and (min-width: 280px) and (max-width: 1030px) {
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 30px;
+  }
 }
 .nav__logo {
   flex-grow: 1;
@@ -47,17 +60,38 @@ $color-active: #23282e;
   flex-basis: 25%;
   display: flex;
   justify-content: space-between;
+  @media all and (min-width: 280px) and (max-width: 1030px) {
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 30px;
+  }
 }
 .nav__logo a {
   font-family: "Montserrat";
   font-size: 45px;
-  letter-spacing: 3px;
+  letter-spacing: 5px;
   text-decoration: none;
   color: $color-text;
+  @media all and (min-width: 280px) and (max-width: 1030px) {
+    font-size: 30px;
+    letter-spacing: 1px;
+  }
 }
 .nav__text a {
   font-family: "Manrope";
   font-size: 25px;
   text-decoration: none;
   color: $color-text;
+}
+.container__title {
+  margin: 0;
+  color: $color-text;
+  font-family: "Manrope";
+  font-size: 60px;
+  letter-spacing: 15px;
+  font-weight: 400;
+  @media all and (min-width: 280px) and (max-width: 1030px) {
+    font-size: 40px;
+    letter-spacing: 5px;
+  }
 }
