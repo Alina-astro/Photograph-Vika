@@ -1,0 +1,40 @@
+@font-face {
+  font-family: "Manrope";
+  src: url(../fonts/Manrope-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-VariableFont_wght.ttf);
+}
+$font-logo: "Montserrat";
+$font-text: "Manrope";
+$color-text: #ffffff;
+$color-bg: #1e1e1e;
+$color-btn: #545a62;
+$color-hover: #2a2f36;
+$color-active: #23282e;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1440px;
+  min-width: 300px;
+  width: 100%;
+  height: 800px;
+  margin: 0 auto;
+  background-image: url(../images/header_img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: $color-text;
+}
+.wrap {
+  padding: 60px;
+}
+.nav {
+  display: flex;
+}

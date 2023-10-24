@@ -1,1 +1,34 @@
-/*# sourceMappingURL=style.css.map */
+@font-face {
+  font-family: "Manrope";
+  src: url(../fonts/Manrope-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-VariableFont_wght.ttf);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1440px;
+  min-width: 300px;
+  width: 100%;
+  height: 800px;
+  margin: 0 auto;
+  background-image: url(../images/header_img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+}
+
+.wrap {
+  padding: 60px;
+}
+
+.nav {
+  display: flex;
+}/*# sourceMappingURL=style.css.map */
