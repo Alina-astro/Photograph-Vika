@@ -31,4 +31,31 @@
 
 .nav {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo {
+  flex-grow: 1;
+}
+
+.nav__text {
+  flex-basis: 25%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__logo a {
+  font-family: "Montserrat";
+  font-size: 45px;
+  letter-spacing: 3px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.nav__text a {
+  font-family: "Manrope";
+  font-size: 25px;
+  text-decoration: none;
+  color: #ffffff;
 }/*# sourceMappingURL=style.css.map */
