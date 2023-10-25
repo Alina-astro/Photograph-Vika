@@ -115,14 +115,26 @@
 }
 
 .main {
-  padding: 60px;
+  max-width: 1440px;
+  min-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px 60px;
   background-color: #3a3f45;
+}
+
+.container-about {
+  padding: 150px 0;
 }
 
 .container-about__title {
   font-family: "Manrope";
   font-size: 40px;
+  font-weight: 600;
   color: #ffffff;
+  text-align: center;
+  width: 50vw;
+  margin-bottom: 30px;
 }
 
 .container-about__wrap {
@@ -131,9 +143,14 @@
   -moz-column-gap: 30px;
        column-gap: 30px;
 }
+@media all and (min-width: 280px) and (max-width: 1030px) {
+  .container-about__wrap {
+    flex-direction: column;
+  }
+}
 
 .container-about__text {
-  flex-grow: 1;
+  flex-basis: 62%;
   max-width: 715px;
   display: flex;
   flex-direction: column;
@@ -141,7 +158,8 @@
 }
 
 .container-about__photo {
-  flex-basis: 38%;
+  flex-grow: 1;
+  max-width: 508px;
 }
 .container-about__photo img {
   width: 100%;
