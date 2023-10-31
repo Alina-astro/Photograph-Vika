@@ -149,3 +149,44 @@ $color-active: #23282e;
     width: 100%;
   }
 }
+// ----------------------------------------Block 3 Portfolio
+
+.container-portfolio {
+  border: 1px solid lime;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .container-portfolio__flex {
+    border: 1px solid purple;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media all and (min-width: 280px) and (max-width: 820px) {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+
+  .container-portfolio__flex_one {
+    img {
+      width: 100%;
+    }
+  }
+  .container-portfolio__flex_two {
+    img {
+      width: 49%;
+      @media all and (min-width: 280px) and (max-width: 820px) {
+        width: 100%;
+      }
+    }
+  }
+  .container-portfolio__flex_tree {
+    img {
+      width: 32%;
+      @media all and (min-width: 280px) and (max-width: 820px) {
+        width: 100%;
+      }
+    }
+  }
+}

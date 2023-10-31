@@ -163,4 +163,42 @@
 }
 .container-about__photo img {
   width: 100%;
+}
+
+.container-portfolio {
+  border: 1px solid lime;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.container-portfolio .container-portfolio__flex {
+  border: 1px solid purple;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media all and (min-width: 280px) and (max-width: 820px) {
+  .container-portfolio .container-portfolio__flex {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+.container-portfolio .container-portfolio__flex_one img {
+  width: 100%;
+}
+.container-portfolio .container-portfolio__flex_two img {
+  width: 49%;
+}
+@media all and (min-width: 280px) and (max-width: 820px) {
+  .container-portfolio .container-portfolio__flex_two img {
+    width: 100%;
+  }
+}
+.container-portfolio .container-portfolio__flex_tree img {
+  width: 32%;
+}
+@media all and (min-width: 280px) and (max-width: 820px) {
+  .container-portfolio .container-portfolio__flex_tree img {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
