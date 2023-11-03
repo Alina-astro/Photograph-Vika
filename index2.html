@@ -17,44 +17,48 @@
 <body>
     <!----------------------------------Page 2 Block 1 Navigation--------------------->
     <header>
-        <div class="container23">
-            <nav class="nav">
-                <a class="logo" href="./index.html">VIKA SADOVNIKOVA PH</a>
-                <div class="navigation">
-                    <a href="./index2.html">УСЛУГИ</a>
-                    <a href="./index3.html">КОНТАКТЫ</a>
-                </div>
-            </nav>
+        <div class="container-nav">
+            <div class="wrap">
+                <nav class="nav">
+                    <div class="nav__logo"><a href="./index.html">VIKA SADOVNIKOVA PH</a></div>
+                    <div class="nav__text">
+                        <a href="./index2.html">УСЛУГИ</a>
+                        <a href="./index3.html">КОНТАКТЫ</a>
+                    </div>
+                </nav>
+            </div>
         </div>
     </header>
-
-    <main>
-        <!-------------------------------------Page 2 Block 2 Services--------------------->
-        <article class="serviceblock">
-            <div class="service-name">
-                <h1>Прогулки по городу</h1>
+    <!-------------------------------------Page 2 Block 2 Services--------------------->
+    <main class="main">
+        <div class="container-service">
+            <!-- <div class="service-name"> -->
+            <h1 class="container-service__title">Прогулки по городу</h1>
+            <!-- </div> -->
+            <div class="container-service__box">
+                <div class="container-service__img"><img src="./images/block5_1.png" alt="photo"></div>
+                <div class="container-service__text">
+                    <p>Фотопрогулка по умопомрачительным городским локациям длительностью 1,5 часа.</p>
+                    <ul>
+                        <li>Консультация с детальной подготовкой к съёмке;</li>
+                        <li>Индивидуальный подбор маршрута с красивыми локациями и интересными местами;</li>
+                        <li>Создание мудборда и помощь с образами и реквизитом;</li>
+                        <li>Непринуждённая атмосфера во время съёмки, помощь с позированием и самыми выгодными
+                            ракурсами;
+                        </li>
+                        <li>Свето- и цветокоррекция всех фото, до 10 выбранных вами фото в ретуши;</li>
+                        <li>40-50 фотографий, анонс из 6 фото в течение часа после съёмки;</li>
+                        <li>Готовые фото в течение 7 рабочих дней;</li>
+                        <li>Закрытый доступ к фотографиям на облачном диске в течение 30 дней;</li>
+                        <li>Классное видео с прогулки в подарок.</li>
+                    </ul>
+                </div>
             </div>
-            <div class="service-photo"><img src="./images/block5_1.png" alt="photo"></div>
-            <div class="aboutservice">
-                <p>Фотопрогулка по умопомрачительным городским локациям длительностью 1,5 часа.</p>
-                <ul>
-                    <li>Консультация в подготовке к съёмке;</li>
-                    <li>Подбор локаций, разработка маршрута;</li>
-                    <li>Создание мудборда и помощь с образами и реквизитом;</li>
-                    <li>Непринуждённая атмосфера во время съёмки, помощь с позированием и самыми выгодными ракурсами;
-                    </li>
-                    <li>Свето- и цветокоррекция всех фото, до 10 выбранных вами фото в ретуши;</li>
-                    <li>От 70 фотографий за время съёмки (90 минут);</li>
-                    <li>Готовые фото в течение 7 рабочих дней;</li>
-                    <li>Закрытый доступ к фотографиям на облачном диске в течение 30 дней.</li>
-                </ul>
+            <div class="container-service__price">7 000 ₽ / 1,5 часа</div>
+            <div class="container-service__button">
+                <a href="https://t.me/vika_sadovnikova">Записаться на съёмку</a>
             </div>
-            <div class="price">
-                <p class="price">60 € / 1,5 часа</p>
-                <a class="button2" href="https://t.me/vika_sadovnikova">Записаться на
-                    съёмку</a>
-            </div>
-        </article>
+        </div>
         <article class="serviceblock">
             <div class="service-name">
                 <h1>Студийные портреты</h1>
@@ -62,14 +66,17 @@
             <div class="service-photo"><img src="./images/block5_2.png" alt="photo">
             </div>
             <div class="aboutservice">
-                <p>Съёмка образов, творческая фотосессия, а также фото для резюме, социальных сетей и сайтов знакомств.
+                <p>Съёмка образов, творческая фотосессия, а также фото для резюме, социальных сетей и сайтов
+                    знакомств.
                 </p>
                 <ul>
-                    <li>Индивидуальный подход к каждой съёмке: разработка визуального стиля для каждого клиента;</li>
+                    <li>Индивидуальный подход к каждой съёмке: разработка визуального стиля для каждого клиента;
+                    </li>
                     <li>Консультация в подготовке к съёмке;</li>
                     <li>Подбор мест для фотосессии, помощь в выборе студии;</li>
                     <li>Помощь с образами, реквизитом для съёмки;</li>
-                    <li>Непринуждённая атмосфера во время съёмки, помощь с позированием и самыми выгодными ракурсами;
+                    <li>Непринуждённая атмосфера во время съёмки, помощь с позированием и самыми выгодными
+                        ракурсами;
                     </li>
                     <li>Свето- и цветокоррекция всех фото, до 10 выбранных вами фото в ретуши;</li>
                     <li>От 50 фотографий за съёмочный час (55 минут)</li>
@@ -91,7 +98,8 @@
             <div class="aboutservice">
                 <p>Фотосессии для экспертов, мастеров, для блогов и продуктов.</p>
                 <ul>
-                    <li>Индивидуальный подход к каждой съёмке: разработка визуального стиля для каждого клиента;</li>
+                    <li>Индивидуальный подход к каждой съёмке: разработка визуального стиля для каждого клиента;
+                    </li>
                     <li>Консультация в подготовке к съёмке;</li>
                     <li>Подбор мест для съёмки, реквизита и образов;</li>
                     <li>Свето- и цветокоррекция всех фото, обработка согласно ТЗ;</li>
@@ -115,7 +123,8 @@
             </div>
             <div class="service-photo"><img src="./images/block5_4.png" alt="photo"></div>
             <div class="aboutservice">
-                <p>Фотограф в твоём телефоне в любой точке земного шара через приложение Shutter app: высокое разрешение
+                <p>Фотограф в твоём телефоне в любой точке земного шара через приложение Shutter app: высокое
+                    разрешение
                     фото и новые впечатления.</p>
                 <ul>
                     <li>Консультация в подготовке к съёмке;</li>
@@ -136,14 +145,14 @@
             </div>
         </article>
     </main>
-    <footer>
-        <!----------------------------------Page 2 Block 4 Contacts--------------------->
-        <address class="address">
+    <!----------------------------------Page 2 Block 4 Contacts--------------------->
+    <footer class="footer">
+        <div class="container-socials">
+            <a href="https://t.me/vika_sadovnikova">
+                <img src="./images/social_telegram2.png" alt="telegram"></a>
             <a href="https://vk.com/victory_sadovnikova">
                 <img src="./images/social_vk2.png" alt="vk"></a>
-            <a href="https://instagram.com/vika_sadovnikova">
-                <img src="./images/social_instagram2.png" alt="instagram"></a>
-        </address>
+        </div>
     </footer>
 </body>
 
