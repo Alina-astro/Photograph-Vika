@@ -42,7 +42,7 @@ $color-active: #23282e;
 // -------------------------------Block 1 Navigation and Title
 .container {
   max-width: 1440px;
-  min-width: 300px;
+  min-width: 280px;
   width: 100%;
   height: 800px;
   margin: 0 auto;
@@ -119,7 +119,7 @@ $color-active: #23282e;
 // ----------------------------------------Block 2 About
 .main {
   max-width: 1440px;
-  min-width: 300px;
+  min-width: 280px;
   width: 100%;
   margin: 0 auto;
   padding: 50px 60px;
@@ -203,7 +203,7 @@ $color-active: #23282e;
 // ----------------------------------------Block 3 Button
 
 .container-portfolio__button {
-  margin: 50px 0;
+  margin-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -220,3 +220,25 @@ $color-active: #23282e;
     }
   }
 }
+// ----------------------------------------Block 4 Contacts
+.footer {
+  max-width: 1440px;
+  min-width: 280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px 60px;
+  background-color: $color-bg;
+}
+.container-socials {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  a {
+    width: 3em;
+    img {
+      width: 100%;
+    }
+  }
+}
+// ----------------------------------------Page 2 Block 5
