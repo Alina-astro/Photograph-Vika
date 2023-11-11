@@ -16,8 +16,8 @@ $color-active: #23282e;
 
 %text-main {
   font-family: "Manrope";
-  font-size: 1.4em;
-  line-height: 2em;
+  font-size: 24px;
+  line-height: 140%;
   text-align: justify;
   color: $color-text;
 }
@@ -26,7 +26,7 @@ $color-active: #23282e;
   width: 60%;
   border-radius: 24px;
   font-family: $font-text;
-  font-size: 1.4em;
+  font-size: 24px;
   text-align: center;
   text-decoration: none;
   color: $color-text;
@@ -59,7 +59,7 @@ $color-active: #23282e;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  @media all and (min-width: 280px) and (max-width: 1030px) {
+  @media all and (min-width: 280px) and (max-width: 1023px) {
     padding: 10px;
   }
 }
@@ -67,7 +67,7 @@ $color-active: #23282e;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  @media all and (min-width: 280px) and (max-width: 1030px) {
+  @media all and (min-width: 280px) and (max-width: 1023px) {
     flex-direction: column;
     align-items: flex-start;
     row-gap: 30px;
@@ -80,7 +80,7 @@ $color-active: #23282e;
   flex-basis: 25%;
   display: flex;
   justify-content: space-between;
-  @media all and (min-width: 280px) and (max-width: 1030px) {
+  @media all and (min-width: 280px) and (max-width: 1023px) {
     flex-direction: column;
     align-items: flex-start;
     row-gap: 30px;
@@ -93,9 +93,13 @@ $color-active: #23282e;
   letter-spacing: 8px;
   text-decoration: none;
   color: $color-text;
-  @media all and (min-width: 280px) and (max-width: 1030px) {
+  @media all and (min-width: 480px) and (max-width: 1023px) {
     font-size: 30px;
     letter-spacing: 1px;
+  }
+  @media all and (min-width: 280px) and (max-width: 479px) {
+    font-size: 24px;
+    letter-spacing: 0;
   }
 }
 .nav__text a {
@@ -103,6 +107,9 @@ $color-active: #23282e;
   font-size: 25px;
   text-decoration: none;
   color: $color-text;
+  @media all and (min-width: 280px) and (max-width: 1023px) {
+    font-size: 18px;
+  }
 }
 .container__title {
   margin: 0;
@@ -111,9 +118,13 @@ $color-active: #23282e;
   font-size: 60px;
   letter-spacing: 15px;
   font-weight: 400;
-  @media all and (min-width: 280px) and (max-width: 1030px) {
+  @media all and (min-width: 480px) and (max-width: 1023px) {
     font-size: 40px;
     letter-spacing: 5px;
+  }
+  @media all and (min-width: 280px) and (max-width: 479px) {
+    font-size: 24px;
+    letter-spacing: 0;
   }
 }
 // ----------------------------------------Block 2 About
@@ -125,10 +136,19 @@ $color-active: #23282e;
   padding: 50px 60px;
   background-color: $color-bg;
   color: $color-text;
+  @media all and (min-width: 480px) and (max-width: 1030px) {
+    padding: 20px 10px;
+  }
+  @media all and (min-width: 280px) and (max-width: 479px) {
+    padding: 10px 10px;
+  }
 }
 
 .container-about {
   padding: 150px 0;
+  @media all and (min-width: 280px) and (max-width: 479px) {
+    padding: 50px 0;
+  }
 }
 .container-about__title {
   font-family: $font-text;
@@ -137,13 +157,17 @@ $color-active: #23282e;
   text-align: center;
   width: 50vw;
   margin-bottom: 30px;
+  @media all and (min-width: 280px) and (max-width: 479px) {
+    font-size: 30px;
+    text-align: start;
+  }
 }
 .container-about__wrap {
   display: flex;
   justify-content: space-between;
   column-gap: 30px;
   @media all and (min-width: 280px) and (max-width: 1030px) {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 }
 .container-about__text {
@@ -153,6 +177,9 @@ $color-active: #23282e;
   flex-direction: column;
   justify-content: space-around;
   @extend %text-main;
+  @media all and (min-width: 280px) and (max-width: 479px) {
+    font-size: 16px;
+  }
 }
 .container-about__photo {
   flex-grow: 1;
@@ -211,11 +238,11 @@ $color-active: #23282e;
     @extend %btn-link;
 
     @media all and (min-width: 501px) and (max-width: 800px) {
-      font-size: 1em;
+      font-size: 18px;
       width: 80%;
     }
     @media all and (min-width: 280px) and (max-width: 500px) {
-      font-size: 1em;
+      font-size: 14px;
       width: 100%;
     }
   }
@@ -253,30 +280,49 @@ $color-active: #23282e;
 }
 // ----------------------------------------Page 2 Block 5 Services
 .container-service {
-  @extend %text-main;
-  padding: 10px 20px;
+  padding: 10px 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 50px;
   .container-service__title {
     font-family: $font-logo;
+    font-size: 2em;
     font-weight: 500;
     margin-bottom: 1em;
+    text-align: center;
+    @media all and (min-width: 280px) and (max-width: 540px) {
+      font-size: 1.5em;
+    }
   }
   .container-service__box {
     display: flex;
     justify-content: space-between;
+    @media all and (min-width: 280px) and (max-width: 1023px) {
+      flex-direction: column;
+      align-items: center;
+    }
     .container-service__img {
       flex-basis: 35%;
+      @media all and (min-width: 280px) and (max-width: 1023px) {
+        flex-basis: 100%;
+      }
       img {
         width: 100%;
       }
     }
     .container-service__text {
       width: 58%;
-      line-height: 1.8em;
+      @extend %text-main;
+      line-height: 150%;
       p {
-        margin-bottom: 0.5em;
+        margin-bottom: 10px;
+      }
+      @media all and (min-width: 280px) and (max-width: 1023px) {
+        width: 100%;
+      }
+      @media all and (min-width: 280px) and (max-width: 540px) {
+        font-size: 18px;
       }
     }
   }
@@ -285,6 +331,9 @@ $color-active: #23282e;
     font-size: 1.6em;
     font-weight: 500;
     margin: 20px 0;
+    @media all and (min-width: 280px) and (max-width: 600px) {
+      font-size: 1.2em;
+    }
   }
   .container-service__button {
     margin: 20px 0;
@@ -292,6 +341,11 @@ $color-active: #23282e;
     a {
       @extend %btn-link;
       padding: 16px 30px;
+      @media all and (min-width: 280px) and (max-width: 800px) {
+        font-size: 1em;
+        width: 100%;
+        padding: 16px;
+      }
     }
   }
 }
