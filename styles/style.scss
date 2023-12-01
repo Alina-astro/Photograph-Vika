@@ -39,6 +39,13 @@ $color-active: #23282e;
   margin: 0;
   padding: 0;
 }
+body {
+  background-color: $color-bg;
+}
+.header {
+  background-color: black;
+}
+
 // -------------------------------Block 1 Navigation and Title
 .container {
   max-width: 1440px;
@@ -292,6 +299,7 @@ $color-active: #23282e;
     }
   }
 }
+
 // ----------------------------------------Page 2,3 Block 1 Navigation
 .container-nav {
   max-width: 1440px;
