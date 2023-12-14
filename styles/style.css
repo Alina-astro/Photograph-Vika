@@ -11,7 +11,7 @@
   font-size: 24px;
   line-height: 140%;
   text-align: justify;
-  color: rgba(243, 228, 177, 0.71);
+  color: rgba(243, 228, 177, 0.7098039216);
 }
 
 .container-contacts a, .container-service .container-service__button a, .container-portfolio__button a {
@@ -21,7 +21,7 @@
   font-size: 24px;
   text-align: center;
   text-decoration: none;
-  color: rgba(243, 228, 177, 0.71);
+  color: rgba(243, 228, 177, 0.7098039216);
   background-color: #372e25;
   padding: 18px;
 }
@@ -47,7 +47,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  color: rgba(243, 228, 177, 0.71);
+  color: rgba(243, 228, 177, 0.7098039216);
 }
 
 .wrap {
@@ -104,7 +104,7 @@ body {
   font-size: 42px;
   letter-spacing: 8px;
   text-decoration: none;
-  color: rgba(243, 228, 177, 0.71);
+  color: rgba(243, 228, 177, 0.7098039216);
 }
 @media all and (min-width: 1024px) and (max-width: 1100px) {
   .nav__logo a {
@@ -128,7 +128,7 @@ body {
   font-family: "Manrope";
   font-size: 25px;
   text-decoration: none;
-  color: rgba(243, 228, 177, 0.71);
+  color: rgba(243, 228, 177, 0.7098039216);
   border: 6px solid transparent;
 }
 @media all and (min-width: 280px) and (max-width: 1023px) {
@@ -139,7 +139,7 @@ body {
 
 .container__title {
   margin: 0;
-  color: rgba(243, 228, 177, 0.71);
+  color: rgba(243, 228, 177, 0.7098039216);
   font-family: "Manrope";
   font-size: 60px;
   letter-spacing: 15px;
@@ -165,7 +165,7 @@ body {
   margin: 0 auto;
   padding: 50px 60px;
   background-color: #191511;
-  color: rgba(243, 228, 177, 0.71);
+  color: rgba(243, 228, 177, 0.7098039216);
 }
 @media all and (min-width: 480px) and (max-width: 1030px) {
   .main {
@@ -334,7 +334,7 @@ body {
   height: 200px;
   margin: 0 auto;
   background-color: #191511;
-  color: rgba(243, 228, 177, 0.71);
+  color: rgba(243, 228, 177, 0.7098039216);
 }
 
 .container-service {

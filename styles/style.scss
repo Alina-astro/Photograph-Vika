@@ -8,16 +8,11 @@
 }
 $font-logo: "Montserrat";
 $font-text: "Manrope";
-$color-text: rgba(243, 228, 177, 0.71);
+$color-text: #f3e4b1b5;
 $color-bg: #191511;
 $color-btn: #372e25;
 $color-hover: #2c211b;
 $color-active: #1e1612;
-$color-bg-old: #3a3f45;
-$color-bg-brown: #1a100be4;
-$color-btn-old: #545a62;
-$color-hover-old: #2a2f36;
-$color-active-old: #23282e;
 
 %text-main {
   font-family: "Manrope";
@@ -38,7 +33,7 @@ $color-active-old: #23282e;
   background-color: $color-btn;
   padding: 18px;
 }
-
+// -------------------------------For All
 * {
   box-sizing: border-box;
   margin: 0;
@@ -47,9 +42,6 @@ $color-active-old: #23282e;
 body {
   background-color: $color-bg;
 }
-// .header {
-//   background-color: black;
-// }
 
 // -------------------------------Block 1 Navigation and Title
 .container {
